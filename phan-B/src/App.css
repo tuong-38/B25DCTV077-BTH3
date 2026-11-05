@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container.light {
+  background-color: #f4f6f9;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.app-container.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.light .card { background-color: #ffffff; }
+.dark .card { background-color: #2d3748; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-theme {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #cbd5e0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form-card {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.light .form-card { background-color: #f8fafc; border: 1px solid #e2e8f0; }
+.dark .form-card { background-color: #3a4a5e; border: 1px solid #4a5568; }
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+  font-size: 0.95rem;
+}
+
+.btn-submit {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-filter {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 6px 12px;
+  border-radius: 15px;
+  border: 1px solid #cbd5e0;
+  cursor: pointer;
+}
+
+.btn-filter.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.stats-box {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.light .stats-box { background-color: #eef2f5; }
+.dark .stats-box { background-color: #3a4a5e; }
+
+.expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.total-box {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #dc3545;
+}
